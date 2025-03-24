@@ -1,9 +1,9 @@
-vim.o.number = true
-vim.cmd("colorscheme xcode")
-require('lualine').setup({
+vim.o.number = true				-- show line numbers
+vim.cmd("colorscheme xcode")	-- set color scheme included with this config (Xcode Theme)
+require('lualine').setup({		-- configuration for lualine
     options = { theme = 'nightfly' }
 })
-require("oil").setup()
+require("oil").setup()			-- configuration for oil.nvim
 require("aerial").setup({
   -- optionally use on_attach to set keymaps when aerial has attached to a buffer
   on_attach = function(bufnr)
@@ -15,6 +15,7 @@ require("aerial").setup({
 -- You probably also want to set a keymap to toggle aerial
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 
+-- Config for Kitty-Scrollback
 require('kitty-scrollback').setup({
     myconfig = {
       kitty_get_text = {
@@ -23,6 +24,7 @@ require('kitty-scrollback').setup({
     }
 })
 
+-- Config for nvim-treesitter
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
@@ -33,8 +35,4 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-
--- local lspconfig = require('lspconfig')
--- lspconfig.ruby_lsp.setup{}
--- require'lspconfig'.pyright.setup{}
 
