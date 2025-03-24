@@ -2,10 +2,23 @@
 
 *\* Nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
 
+👉 Version **1.0.1** (03/24/2025)
+
 ---
-My Neovim configuration folder which concurrently uses both `init.vim` and `init.lua` in its root (`lua/init.lua`) (I have no idea if this is a klunky practice—I just want to distinctly separate what are the vim ones from the Lua ones)
+As I thought of backing up my Neovim configuration, housing it in a repository is a novel way of doing it, and thus creativity brought me to the creation of **Nori-vim**! Mainly as a backup, anyone can also make use of my clunky sentimental Neovim config!
+
+As of now, my configuration oncurrently uses both `init.vim` and `init.lua` (`lua/init.lua`). Clunky it may be, but making it entirely in Lua is a goal!
 
 Built with Neovim 0.10.4 on macOS with love ❤️
+
+## Dependencies
+*Version 1.0.1 adds this section because I was too excited to share this that I completely forgot this section*
+* `neovim`
+* Everyday development utilities such as `git`, `curl`, `make`, or `gcc` (or any C or related compilers)
+* A [Nerd Font](https://www.nerdfonts.com/font-downloads) to be also set via your terminal of choice (for rendering icons and pseudocharacters within Neovim)
+* `npm` for Nvim-Treesitter and LspServer to communicate
+* Languages setup such as `python` (or `python3`), `ruby`, among others.
+* Language Server Protocols (LSPs) (i.e. `pyright` or `ruby-lsp`) installed from your respective package managers or its binaries loaded by the user (will nag you if an LspServer is not installed unless disabling LspServer entirely)
 
 ## Installation
 
