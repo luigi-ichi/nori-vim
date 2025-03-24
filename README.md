@@ -7,7 +7,7 @@
 ---
 As I thought of backing up my Neovim configuration, housing it in a repository is a novel way of doing it, and thus creativity brought me to the creation of **Nori-vim**! Mainly as a backup, anyone can also make use of my clunky sentimental Neovim config!
 
-As of now, my configuration oncurrently uses both `init.vim` and `init.lua` (`lua/init.lua`). Clunky it may be, but making it entirely in Lua is a goal!
+As of now, my configuration concurrently uses both `init.vim` and `init.lua` (`lua/init.lua`). Clunky it may be, but making it entirely in Lua is a goal!
 
 Built with Neovim 0.10.4 on macOS with love ❤️
 
