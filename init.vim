@@ -24,6 +24,10 @@ Plug 'lewis6991/gitsigns.nvim' 	  " OPTIONAL: for git status
 Plug 'romgrk/barbar.nvim'			  " Tab Bar (see Keybinds below)
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' } " Fuzzy Searching
 
+" -- Prettier and CMP Plugins
+Plug 'neovim/nvim-lspconfig'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'MunifTanjim/prettier.nvim'	  " Install via package manager (brew, apt, etc.) 
 
 call plug#end()
 
