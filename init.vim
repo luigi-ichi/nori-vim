@@ -1,3 +1,5 @@
+let mapleader = " "			  " Modifier Key for this configuration (for seamless use between Windows and Linux/Unix)
+
 " [ PLUGINS via vim-plug ]
 call plug#begin()
 
@@ -32,11 +34,13 @@ Plug 'MunifTanjim/prettier.nvim'	  " Install via package manager (brew, apt, etc
 call plug#end()
 
 " [ Essential Settings ]
-set termguicolors	" Color support in Neovim
+set termguicolors				 " Color support in Neovim
+
+" Load lua/init.lua
 lua require('init')
 
 " [ General Settings ]
-set number					" Line Numbers
+set number						 " Line Numbers
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 " set ignorecase              " case insensitive
@@ -45,10 +49,10 @@ set hlsearch                " highlight search
 set incsearch               " incremental search
 
 " [ Spacing ]
-set noexpandtab
-set tabstop=3               " number of columns occupied by a tab 
+set expandtab
+set tabstop=2               " number of columns occupied by a tab 
 " set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
-set shiftwidth=3             " width for autoindents
+set shiftwidth=2             " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
 set wildmode=longest,list   " get bash-like tab completions
 " set cc=80                  " set an 80 column border for good coding style
@@ -67,8 +71,18 @@ set ttyfast                 " Speed up scrolling in Vim
 " set backupdir=~/.cache/vim " Directory to store backup files.
 
 " [ Custom Keybinds ]
-nnoremap <A-t> <Cmd>Neotree toggle<CR>
+nnoremap <leader>t <Cmd>Neotree toggle<CR>
 nnoremap <Esc> <C-\><C-n>
+nnoremap <leader>\ <Cmd>vs<CR>
+nnoremap <leader>\| <Cmd>split<CR>
+
+" [ Barbar Keybinds ]
+" Move to previous/next
+nnoremap <silent>    <A-,> <Cmd>BufferPrevious<CR>
+nnoremap <silent>    <A-.> <Cmd>BufferNext<CR>
+
+" Re-order to previous/next
+nnoremap <silent>    <A-l> <Cm<Cmd>split<CR>
 
 " [ Barbar Keybinds ]
 " Move to previous/next
@@ -92,6 +106,7 @@ nnoremap <silent>    <A-9> <Cmd>BufferGoto 9<CR>
 nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
 
 " Pin/unpin buffer
+nnoremap <leader>\| <Cmd> vs<CR>
 nnoremap <silent>    <A-p> <Cmd>BufferPin<CR>
 
 " Goto pinned/unpinned buffer
@@ -128,7 +143,6 @@ nnoremap <silent> <Space>bw <Cmd>BufferOrderByWindowNumber<CR>
 " :BarbarEnable - enables barbar (enabled by default)
 " :BarbarDisable - very bad command, should never be used
 
-let mapleader = " "
 " [ Telescope Keybinds ]
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -140,4 +154,5 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+let mapleader = " "
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
