@@ -2,7 +2,7 @@
 
 *\* Nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
 
-👉 Version **1.0.1** (03/24/2025)
+👉 Version **1.1.0** (03/29/2025)
 
 ---
 As I thought of backing up my Neovim configuration, housing it in a repository is a novel way of doing it, and thus creativity brought me to the creation of **Nori-vim**! Mainly as a backup, anyone can also make use of my clunky sentimental Neovim config!
@@ -12,19 +12,38 @@ As of now, my configuration concurrently uses both `init.vim` and `init.lua` (`l
 Built with Neovim 0.10.4 on macOS with love ❤️
 
 ## Dependencies
-*Version 1.0.1 adds this section because I was too excited to share this that I completely forgot this section*
 * `neovim`
 * Everyday development utilities such as `git`, `curl`, `make`, or `gcc` (or any C or related compilers)
 * A [Nerd Font](https://www.nerdfonts.com/font-downloads) to be also set via your terminal of choice (for rendering icons and pseudocharacters within Neovim)
 * `npm` for Nvim-Treesitter and LspServer to communicate
 * Languages setup such as `python` (or `python3`), `ruby`, among others.
-* Language Server Protocols (LSPs) (i.e. `pyright` or `ruby-lsp`) installed from your respective package managers or its binaries loaded by the user (will nag you if an LspServer is not installed unless disabling LspServer entirely)
+* Language Server Protocols (LSPs) (i.e. `pyright` or `ruby-lsp`) installed from your respective package managers or its binaries loaded by the user (will display a message at the command bar every startup if an LSP is not installed, but will not interfere with your command sequences)
 
 ## Installation
 
-***For now, this only works on macOS, UNIX, and should be on Linux.*** I might consider making one for Windows (but WSL is better).
+Simply clone this into your `nvim` folder (on macOS, for example, it is in `~/.config/nvim`) and make sure to execute `firstTimeSetup.bash` (or `firstTimeSetup.ps1` for Windows) which is just a fancy script to install **vim-plug**, my plugin manager which takes care of the plugins I have on my Neovim config here!
 
-Simply clone this into your `nvim` folder (on macOS, for example, it is in `~/.config/nvim`) and make sure to execute `firstTimeSetup.bash` which is just a fancy script to install **vim-plug**, my plugin manager which takes care of the plugins I have on my Neovim config here!
+To clone the contents of this repository directly to your `nvim` folder:
+`cd <TO-YOUR-NVIM-PATH>`
+`git clone git@github.com:luigi-2ba3/nori-vim.git .`
+
+### `where nvim`?
+Here's this handy table to familiarize your Neovim path!
+*\* Still haven't deciphered it for Linux, will update soon!*
+| Operating System        | Path                            |
+|-------------------------|--------------------------------|
+| Linux, Unix-like, macOS | `~/.config/nvim`              |
+| Windows                | `%USERPROFILE%\AppData\Local\nvim` |
+
+## Officially Tested Platforms
+* macOS
+    * Installed neovim via `brew`
+    * Using iTerm2 instead of the native system terminal (native term does not support higher graphical capabilities)
+    * Definitely need a Nerd Font to install and for the terminal to use
+* Windows
+    * Installed neovim via a setup executable (`.msi`)
+    * Installed Git via a setup executable (`.exe`) with all default installation options
+    * Windows Terminal supports everything out of the box, installing a Nerd Font may be optional
 
 ## What's Included?
 
@@ -40,3 +59,16 @@ Simply clone this into your `nvim` folder (on macOS, for example, it is in `~/.c
 * [**vim-lsp** (prabirshrestha/vim-lsp)](https://github.com/prabirshrestha/vim-lsp)
 * [**barbar.nvim** (romgrk/barbar.nvim)](https://github.com/romgrk/barbar.nvim)
 * [**telescope.nvim** (nvim-telescope/telescope.nvim)](https://github.com/nvim-telescope/telescope.nvim)
+
+## Changelog
+* 1.1.0 (3/29/2025)
+    * Initial, official Windows support (at least the first time setup script)
+    * README now includes the following
+        * A quick table showcasing nvim paths
+        * A more in-depth explanation how to clone this to your nvim path
+        * A section that logs my officially tested platforms
+        * This changelog (of course, Captain Obvious!)
+* 1.0.1 (3/24/2025)
+    * README now includes dependencies that are needed before setting this up
+* 1.1.0 (3/23/2025)
+    * Initial release
