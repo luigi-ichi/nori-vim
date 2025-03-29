@@ -29,7 +29,6 @@ To clone the contents of this repository directly to your `nvim` folder:
 
 ### `where nvim`?
 Here's this handy table to familiarize your Neovim path!
-*\* Still haven't deciphered it for Linux, will update soon!*
 | Operating System        | Path                            |
 |-------------------------|--------------------------------|
 | Linux, Unix-like, macOS | `~/.config/nvim`              |
