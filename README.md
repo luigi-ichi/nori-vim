@@ -81,5 +81,5 @@ Here's this handy table to familiarize your Neovim path!
     * `tabstop` and `shiftwidth` changed from 3 to 2
 * 1.0.1 (3/24/2025)
     * README now includes dependencies that are needed before setting this up
-* 1.1.0 (3/23/2025)
+* 1.0.0 (3/23/2025)
     * Initial release
