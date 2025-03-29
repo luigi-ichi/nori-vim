@@ -67,6 +67,7 @@ Here's this handy table to familiarize your Neovim path!
 
 ## Changelog
 * 1.1.0 (3/29/2025)
+    * MIT License Ready!
     * Initial, official Windows support (at least the first time setup script) and Linux (Ubuntu)
     * README now includes the following
         * A quick table showcasing nvim paths
