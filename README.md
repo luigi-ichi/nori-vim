@@ -44,6 +44,11 @@ Here's this handy table to familiarize your Neovim path!
     * Installed neovim via a setup executable (`.msi`)
     * Installed Git via a setup executable (`.exe`) with all default installation options
     * Windows Terminal supports everything out of the box, installing a Nerd Font may be optional
+* Linux
+    * Ubuntu (including Linux Mint, Lubuntu, etc.)
+        * Installed neovim via `apt` (for more in-depth installations and for other distributions please refer to [neovim/neovim/wiki/Installing-Neovim/Linux](https://github.com/neovim/neovim/wiki/Installing-Neovim/921fe8c40c34dd1f3fb35d5b48c484db1b8ae94b#linux))
+        * Prerequisites for Python needed
+        * Nerd Font required to render Neovim with this config correctly
 
 ## What's Included?
 
@@ -55,7 +60,7 @@ Here's this handy table to familiarize your Neovim path!
 * [**Lualine** (nvim-lualine/lualine.nvim)](https://github.com/nvim-lualine/lualine.nvim)
 * [**GitHub Copilot** (github/copilot.vim)](https://github.com/github/copilot.vim)
 * [**kitty-scrollback.nvim** (mikesmithgh/kitty-scrollback.nvim)](https://github.com/mikesmithgh/kitty-scrollback.nvim)
-* [**nvim-Treesitter** (nvim-treesitter/nvim-treesitter)](https://github.com/nvim-treesitter/nvim-treesitter)
+* [**nvim-Treesitter** (nvim-treesitter/nvim-treesitter)](https://github.com/nvim-treesitter/nvimvim --cmd 'let g:startify_disable_at_vimenter = 1' +VimwikiMakeDiaryNote-treesitter)
 * [**vim-lsp** (prabirshrestha/vim-lsp)](https://github.com/prabirshrestha/vim-lsp)
 * [**barbar.nvim** (romgrk/barbar.nvim)](https://github.com/romgrk/barbar.nvim)
 * [**telescope.nvim** (nvim-telescope/telescope.nvim)](https://github.com/nvim-telescope/telescope.nvim)
@@ -63,13 +68,17 @@ Here's this handy table to familiarize your Neovim path!
 
 ## Changelog
 * 1.1.0 (3/29/2025)
-    * Initial, official Windows support (at least the first time setup script)
+    * Initial, official Windows support (at least the first time setup script) and Linux (Ubuntu)
     * README now includes the following
         * A quick table showcasing nvim paths
         * A more in-depth explanation how to clone this to your nvim path
         * A section that logs my officially tested platforms
         * This changelog (of course, Captain Obvious!)
     * Added `prettier.nvim` plugin
+    * Unified a leader key to the spacebar (`let mapleader = " "`) for seamless compatibility across platforms
+        * Opening NeoTree is now `Space+t` instead of `Alt+t`
+    * New custom bindings to split nvim vertically `<leader>\` or horizontally `<leader>| (<leader> Shift \)`
+    * `tabstop` and `shiftwidth` changed from 3 to 2
 * 1.0.1 (3/24/2025)
     * README now includes dependencies that are needed before setting this up
 * 1.1.0 (3/23/2025)
