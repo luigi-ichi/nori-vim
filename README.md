@@ -24,7 +24,7 @@ Built with Neovim 0.10.4 on macOS with love ❤️
 Simply clone this into your `nvim` folder (on macOS, for example, it is in `~/.config/nvim`) and make sure to execute `firstTimeSetup.bash` (or `firstTimeSetup.ps1` for Windows) which is just a fancy script to install **vim-plug**, my plugin manager which takes care of the plugins I have on my Neovim config here!
 
 To clone the contents of this repository directly to your `nvim` folder:
-`cd <TO-YOUR-NVIM-PATH>`
+`cd <TO-YOUR-NVIM-PATH>`  
 `git clone git@github.com:luigi-2ba3/nori-vim.git .`
 
 ### `where nvim`?
@@ -59,6 +59,7 @@ Here's this handy table to familiarize your Neovim path!
 * [**vim-lsp** (prabirshrestha/vim-lsp)](https://github.com/prabirshrestha/vim-lsp)
 * [**barbar.nvim** (romgrk/barbar.nvim)](https://github.com/romgrk/barbar.nvim)
 * [**telescope.nvim** (nvim-telescope/telescope.nvim)](https://github.com/nvim-telescope/telescope.nvim)
+* [**prettier.nvim** (MunifTanjim/prettier.nvim)](https://github.com/MunifTanjim/prettier.nvim)
 
 ## Changelog
 * 1.1.0 (3/29/2025)
@@ -68,6 +69,7 @@ Here's this handy table to familiarize your Neovim path!
         * A more in-depth explanation how to clone this to your nvim path
         * A section that logs my officially tested platforms
         * This changelog (of course, Captain Obvious!)
+    * Added `prettier.nvim` plugin
 * 1.0.1 (3/24/2025)
     * README now includes dependencies that are needed before setting this up
 * 1.1.0 (3/23/2025)
