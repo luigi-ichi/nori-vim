@@ -60,7 +60,7 @@ Here's this handy table to familiarize your Neovim path!
 * [**Lualine** (nvim-lualine/lualine.nvim)](https://github.com/nvim-lualine/lualine.nvim)
 * [**GitHub Copilot** (github/copilot.vim)](https://github.com/github/copilot.vim)
 * [**kitty-scrollback.nvim** (mikesmithgh/kitty-scrollback.nvim)](https://github.com/mikesmithgh/kitty-scrollback.nvim)
-* [**nvim-Treesitter** (nvim-treesitter/nvim-treesitter)](https://github.com/nvim-treesitter/nvimvim --cmd 'let g:startify_disable_at_vimenter = 1' +VimwikiMakeDiaryNote-treesitter)
+* [**nvim-Treesitter** (nvim-treesitter/nvim-treesitter)](https://github.com/nvim-treesitter/nvimvim)
 * [**vim-lsp** (prabirshrestha/vim-lsp)](https://github.com/prabirshrestha/vim-lsp)
 * [**barbar.nvim** (romgrk/barbar.nvim)](https://github.com/romgrk/barbar.nvim)
 * [**telescope.nvim** (nvim-telescope/telescope.nvim)](https://github.com/nvim-telescope/telescope.nvim)
