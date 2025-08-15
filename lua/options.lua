@@ -24,6 +24,6 @@ o.clipboard = "unnamedplus" -- Yank/Delete/Put Operations => System Clipboard
 -- Band-aid solution for the theme; I can't get around this problem yet >_<
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
-    vim.cmd.colorscheme("xcodedarkhc")
+    pcall(vim.cmd.colorscheme, "xcodedarkhc")
   end,
 })
