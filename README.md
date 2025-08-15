@@ -1,13 +1,13 @@
-![HeaderImage](https://imgur.com/yVTLCY6.png)
+![HeaderImage](https://imgur.com/8UZyuOR.png)
 
-*\* Nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
+*\* nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
 
-👉 Version **1.1.0** (03/29/2025)
+👉 Version **2.0.0** (08/15/2025)
 
 ---
 As I thought of backing up my Neovim configuration, housing it in a repository is a novel way of doing it, and thus creativity brought me to the creation of **Nori-vim**! Mainly as a backup, anyone can also make use of my clunky sentimental Neovim config!
 
-As of now, my configuration concurrently uses both `init.vim` and `init.lua` (`lua/init.lua`). Clunky it may be, but making it entirely in Lua is a goal!
+**Now rewritten in Lua!**
 
 Built with Neovim 0.10.4 on macOS with love ❤️
 
@@ -33,6 +33,14 @@ Here's this handy table to familiarize your Neovim path!
 |-------------------------|--------------------------------|
 | Linux, Unix-like, macOS | `~/.config/nvim`              |
 | Windows                | `%USERPROFILE%\AppData\Local\nvim` |
+
+## Note on Rewrite
+As of this version, these features do not work or does work but under unchartered territory not tested by the author:
+* Copilot
+* Kitty-Scrollback
+* Nvim-Treesitter
+* Vim-Lsp
+* Barbar.nvim
 
 ## Officially Tested Platforms
 * macOS
@@ -66,6 +74,9 @@ Here's this handy table to familiarize your Neovim path!
 * [**prettier.nvim** (MunifTanjim/prettier.nvim)](https://github.com/MunifTanjim/prettier.nvim)
 
 ## Changelog
+* 2.0.0 (8/15/2025)
+    * Rewrote entire configuration to use Lua instead of Vimscript
+    * Using `lazy.nvim` instead of `vim-plug`
 * 1.1.0 (3/29/2025)
     * MIT License Ready!
     * Initial, official Windows support (at least the first time setup script) and Linux (Ubuntu)
