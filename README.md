@@ -1,4 +1,4 @@
-![HeaderImage](https://imgur.com/RE2BGlW.png)
+![HeaderImage](https://imgur.com/8UZyuOR.png)
 
 *\* nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
 
