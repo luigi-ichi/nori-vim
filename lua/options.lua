@@ -1,5 +1,7 @@
--- Common Neovim Settings
 local o = vim.opt
+-- Common Neovim Settings
+local theme = "xcodedarkhc" -- Default color scheme/theme upon Neovim startup
+                            -- Change this string if you like a different one
 
 -- [ EDITOR
 o.mouse = "a" -- Mouse support
@@ -24,6 +26,6 @@ o.clipboard = "unnamedplus" -- Yank/Delete/Put Operations => System Clipboard
 -- Band-aid solution for the theme; I can't get around this problem yet >_<
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
-    pcall(vim.cmd.colorscheme, "xcodedarkhc")
+    pcall(vim.cmd.colorscheme, theme)
   end,
 })
