@@ -1,4 +1,4 @@
 -- init.lua loads all of these separate Lua configs
-require('lua.options')
-require('lua.keymaps')
-require('lua.lazy')
+require('options')
+require('keymaps')
+require('lazy-config')
