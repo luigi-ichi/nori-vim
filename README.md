@@ -2,6 +2,7 @@
 
 *\* Nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
 
+*** This branch houses the older major version 1 where it is all configured with Vimscript instead of Lua***
 👉 Version **1.1.0** (03/29/2025)
 
 ---
