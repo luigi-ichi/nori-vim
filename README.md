@@ -75,7 +75,8 @@ As of this version, these features do not work or does work but under unchartere
 
 ## Changelog
 * 2.0.2 (8/30/2025)
-    * Removed `lazy-lock.json` from .gitignore and restored said file from commit 8ad5176 for better plugin version consistency
+    * Removed `lazy-lock.json` from `.gitignore` and restored said file from commit 8ad5176 for better plugin version consistency
+    * Removed first-time setup shell scripts (both `bash` and `ps1`) as they were designed for vimscript nori-vim (v1 uses vim-plug)
 * 2.0.1 (8/15/2025)
     * Changed `lua/lazy.lua` to `lua/lazy-config.lua` to avoid ambiguity with code that requires `require('lazy')`
     * Choosing a default theme by `lua/options.lua` is a little bit more friendly by using a global variable instead
