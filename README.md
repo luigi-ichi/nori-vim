@@ -2,12 +2,12 @@
 
 *\* nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
 
-👉 Version **2.0.1** (08/15/2025)
+👉 Version **2.0.2** (08/30/2025)
 
 ---
 As I thought of backing up my Neovim configuration, housing it in a repository is a novel way of doing it, and thus creativity brought me to the creation of **Nori-vim**! Mainly as a backup, anyone can also make use of my clunky sentimental Neovim config!
 
-**Now rewritten in Lua!**
+**Now rewritten in Lua!** [Wanted the old vimscript version?](https://github.com/luigi-ichi/nori-vim/tree/v1)
 
 Built with Neovim 0.10.4 on macOS with love ❤️
 
@@ -74,6 +74,8 @@ As of this version, these features do not work or does work but under unchartere
 * [**prettier.nvim** (MunifTanjim/prettier.nvim)](https://github.com/MunifTanjim/prettier.nvim)
 
 ## Changelog
+* 2.0.2 (8/30/2025)
+    * Removed `lazy-lock.json` from .gitignore and restored said file from commit 8ad5176 for better plugin version consistency
 * 2.0.1 (8/15/2025)
     * Changed `lua/lazy.lua` to `lua/lazy-config.lua` to avoid ambiguity with code that requires `require('lazy')`
     * Choosing a default theme by `lua/options.lua` is a little bit more friendly by using a global variable instead
