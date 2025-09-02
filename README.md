@@ -1,8 +1,8 @@
-![HeaderImage](https://imgur.com/8UZyuOR.png)
+![HeaderImage](https://i.imgur.com/J2f4Shh.png)
 
 *\* nori-vim because it is a Hidamari Sketch reference (Nori is quite the techie tenant of Hidamari-sō just like us!)*, but it does have a ring to it like Neovim! 🤭
 
-👉 Version **2.0.2** (08/30/2025)
+👉 Version **2.1.0** (09/02/2025)
 
 ---
 As I thought of backing up my Neovim configuration, housing it in a repository is a novel way of doing it, and thus creativity brought me to the creation of **Nori-vim**! Mainly as a backup, anyone can also make use of my clunky sentimental Neovim config!
@@ -15,9 +15,8 @@ Built with Neovim 0.10.4 on macOS with love ❤️
 * `neovim`
 * Everyday development utilities such as `git`, `curl`, `make`, or `gcc` (or any C or related compilers)
 * A [Nerd Font](https://www.nerdfonts.com/font-downloads) to be also set via your terminal of choice (for rendering icons and pseudocharacters within Neovim)
+* `fzf` and `bat` for file searching within Neovim
 * `npm` for Nvim-Treesitter and LspServer to communicate
-* Languages setup such as `python` (or `python3`), `ruby`, among others.
-* Language Server Protocols (LSPs) (i.e. `pyright` or `ruby-lsp`) installed from your respective package managers or its binaries loaded by the user (will display a message at the command bar every startup if an LSP is not installed, but will not interfere with your command sequences)
 
 ## Installation
 
@@ -33,14 +32,6 @@ Here's this handy table to familiarize your Neovim path!
 |-------------------------|--------------------------------|
 | Linux, Unix-like, macOS | `~/.config/nvim`              |
 | Windows                | `%USERPROFILE%\AppData\Local\nvim` |
-
-## Note on Rewrite
-As of this version, these features do not work or does work but under unchartered territory not tested by the author:
-* Copilot
-* Kitty-Scrollback
-* Nvim-Treesitter
-* Vim-Lsp
-* Barbar.nvim
 
 ## Officially Tested Platforms
 * macOS
@@ -63,17 +54,27 @@ As of this version, these features do not work or does work but under unchartere
 * [**Xcode Theme** (lunacookies/vim-colors-xcode)](https://github.com/lunacookies/vim-colors-xcode)
 * [**Startify** (mhinz/vim-startify)](https://github.com/mhinz/vim-startify)
 * [**vim-surround** (tpope/vim-surround)](https://github.com/tpope/vim-surround)
+* [**oil.nvim** (stevearc/oil.nvim)](https://github.com/stevearc/oil.nvim)
 * [**Neo-tree.nvim** (nvim-neo-tree/neo-tree.nvim)](https://github.com/nvim-neo-tree/neo-tree.nvim)
+* [**barbar.nvim** (romgrk/barbar.nvim)](https://github.com/romgrk/barbar.nvim)
 * [**Lualine** (nvim-lualine/lualine.nvim)](https://github.com/nvim-lualine/lualine.nvim)
+* [**which-key.nvim** (folke/which-key.nvim)](https://github.com/folke/which-key.nvim)
+* [**fzf.vim** (junegunn/fzf.vim)](https://github.com/junegunn/fzf.vim)
 * [**GitHub Copilot** (github/copilot.vim)](https://github.com/github/copilot.vim)
 * [**kitty-scrollback.nvim** (mikesmithgh/kitty-scrollback.nvim)](https://github.com/mikesmithgh/kitty-scrollback.nvim)
 * [**nvim-Treesitter** (nvim-treesitter/nvim-treesitter)](https://github.com/nvim-treesitter/nvimvim)
-* [**vim-lsp** (prabirshrestha/vim-lsp)](https://github.com/prabirshrestha/vim-lsp)
-* [**barbar.nvim** (romgrk/barbar.nvim)](https://github.com/romgrk/barbar.nvim)
-* [**telescope.nvim** (nvim-telescope/telescope.nvim)](https://github.com/nvim-telescope/telescope.nvim)
 * [**prettier.nvim** (MunifTanjim/prettier.nvim)](https://github.com/MunifTanjim/prettier.nvim)
+* [**nvim-lspconfig** (neovim/nvim-lspconfig)](https://github.com/neovim/nvim-lspconfig)
 
 ## Changelog
+* 2.1.0 (9/2/2025)
+	* Plugin configs in `lua/plugins` now expanded from the singular `init.lua` to their own respective Lua scripts.
+	* New plugins!
+		* `folke/which-key.nvim`
+        * `oil.nvim`
+	* Restored `nvim-treesitter` and `barbar.nvim`
+	* Using `fzf.vim` instead of `telescope.nvim` 
+	* Retracted all LSP-related functionality for a future version (can't figure it out atm >_<)
 * 2.0.2 (8/30/2025)
     * Removed `lazy-lock.json` from `.gitignore` and restored said file from commit 8ad5176 for better plugin version consistency
     * Removed first-time setup shell scripts (both `bash` and `ps1`) as they were designed for vimscript nori-vim (v1 uses vim-plug)
