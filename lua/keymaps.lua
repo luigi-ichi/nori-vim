@@ -47,3 +47,16 @@ vim.keymap.set("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", { silent = t
 vim.keymap.set("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", { silent = true })
 vim.keymap.set("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", { silent = true })
 
+-- FZF mappings
+vim.keymap.set('n', '<leader>ff', ':Files<CR>', { desc = 'Find files' })
+vim.keymap.set('n', '<leader>fg', ':Rg<CR>', { desc = 'Live grep' })
+vim.keymap.set('n', '<leader>fb', ':Buffers<CR>', { desc = 'Find buffers' })
+vim.keymap.set('n', '<leader>fh', ':History<CR>', { desc = 'File history' })
+vim.keymap.set('n', '<leader>fc', ':Commands<CR>', { desc = 'Find commands' })
+
+-- Oil mappings
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<leader>o", "<CMD>Oil<CR>", { desc = "Open oil" })
+vim.keymap.set("n", "<leader>O", function()
+  require("oil").toggle_float()
+end, { desc = "Open oil (floating)" })
