@@ -26,7 +26,9 @@ To clone the contents of this repository directly to your `nvim` folder:
 `cd <TO-YOUR-NVIM-PATH>`  
 
 Then clone this entire repository to your Neovim config folder:
+
 Via SSL (recommended): `git clone git@github.com:luigi-2ba3/nori-vim.git .`
+
 Via HTTPS: `git clone https://github.com/luigi-ichi/nori-vim.git .`
 
 ### `where nvim`?
@@ -35,6 +37,7 @@ Here's this handy table to familiarize your Neovim path!
 |-------------------------|--------------------------------|
 | Linux, Unix-like, macOS | `~/.config/nvim`              |
 | Windows                | `%USERPROFILE%\AppData\Local\nvim` |
+
 If you're unsure, you can execute the command `:echo stdpath('config')` inside Neovim, which will print back the directory to your Neovim configuration (where you'll `cd` to).
 
 ## Officially Tested Platforms
