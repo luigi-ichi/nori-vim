@@ -20,11 +20,14 @@ Built with Neovim 0.10.4 on macOS with love ❤️
 
 ## Installation
 
-Simply clone this into your `nvim` folder (on macOS, for example, it is in `~/.config/nvim`) and make sure to execute `firstTimeSetup.bash` (or `firstTimeSetup.ps1` for Windows) which is just a fancy script to install **vim-plug**, my plugin manager which takes care of the plugins I have on my Neovim config here!
+Simply clone this into your `nvim` folder (on macOS, for example, it is in `~/.config/nvim`) and make sure to execute `:Lazy` in the command line (invoked by the `:` key) to install the plugins specified for this configuration.
 
 To clone the contents of this repository directly to your `nvim` folder:
 `cd <TO-YOUR-NVIM-PATH>`  
-`git clone git@github.com:luigi-2ba3/nori-vim.git .`
+
+Then clone this entire repository to your Neovim config folder:
+Via SSL (recommended): `git clone git@github.com:luigi-2ba3/nori-vim.git .`
+Via HTTPS: `git clone https://github.com/luigi-ichi/nori-vim.git .`
 
 ### `where nvim`?
 Here's this handy table to familiarize your Neovim path!
@@ -32,6 +35,7 @@ Here's this handy table to familiarize your Neovim path!
 |-------------------------|--------------------------------|
 | Linux, Unix-like, macOS | `~/.config/nvim`              |
 | Windows                | `%USERPROFILE%\AppData\Local\nvim` |
+If you're unsure, you can execute the command `:echo stdpath('config')` inside Neovim, which will print back the directory to your Neovim configuration (where you'll `cd` to).
 
 ## Officially Tested Platforms
 * macOS
